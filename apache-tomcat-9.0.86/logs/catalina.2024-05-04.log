@@ -1,0 +1,48 @@
+04-May-2024 11:44:21.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.86
+04-May-2024 11:44:21.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 14 2024 08:15:12 UTC
+04-May-2024 11:44:21.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.86.0
+04-May-2024 11:44:21.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+04-May-2024 11:44:21.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+04-May-2024 11:44:21.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-May-2024 11:44:21.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+04-May-2024 11:44:21.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.1+10-21
+04-May-2024 11:44:21.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-May-2024 11:44:21.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86
+04-May-2024 11:44:21.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86
+04-May-2024 11:44:22.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-May-2024 11:44:22.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-May-2024 11:44:22.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+04-May-2024 11:44:22.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-May-2024 11:44:22.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-May-2024 11:44:22.023 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\conf\logging.properties
+04-May-2024 11:44:22.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-May-2024 11:44:22.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-May-2024 11:44:22.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-May-2024 11:44:22.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-May-2024 11:44:22.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86
+04-May-2024 11:44:22.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86
+04-May-2024 11:44:22.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\temp
+04-May-2024 11:44:22.031 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-19\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\kylef\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\kylef\AppData\Local\Programs\Python\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\kylef\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Azure Data Studio\bin;C:\Users\kylef\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kylef\AppData\Roaming\npm;.]
+04-May-2024 11:44:22.464 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-May-2024 11:44:22.494 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [727] milliseconds
+04-May-2024 11:44:22.560 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-May-2024 11:44:22.561 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.86]
+04-May-2024 11:44:22.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\docs]
+04-May-2024 11:44:22.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\docs] has finished in [405] ms
+04-May-2024 11:44:22.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\examples]
+04-May-2024 11:44:23.661 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\examples] has finished in [679] ms
+04-May-2024 11:44:23.662 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\host-manager]
+04-May-2024 11:44:23.714 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\host-manager] has finished in [52] ms
+04-May-2024 11:44:23.715 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\manager]
+04-May-2024 11:44:23.766 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\manager] has finished in [51] ms
+04-May-2024 11:44:23.767 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\ROOT]
+04-May-2024 11:44:23.800 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\ROOT] has finished in [33] ms
+04-May-2024 11:44:23.801 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\web]
+04-May-2024 11:44:23.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\kylef\OneDrive\Desktop\apache-tomcat-9.0.86\webapps\web] has finished in [40] ms
+04-May-2024 11:44:23.845 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-May-2024 11:44:23.893 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1397] milliseconds
+04-May-2024 11:59:09.342 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-May-2024 11:59:09.353 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-May-2024 11:59:09.386 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-May-2024 11:59:09.509 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-May-2024 11:59:09.533 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

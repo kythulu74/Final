@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html ng-app="itemApp">
+    
+    <head>
+        <title>Item Form</title>
+
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <script src="item.js"></script>
+        
+        <style>
+            html, body {
+            min-height: 100%;
+            background-color: darkblue;
+            }
+            body, div, form, input, select, textarea, label { 
+            padding: 0;
+            margin: 0;
+            outline: none;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            line-height: 22px;
+            }
+            h1 {
+            position: absolute;
+            margin:0;
+            font-size: 60px;
+            color: #fff;
+            z-index: 2;
+            line-height: 83px;
+            top:30px;
+            }
+            legend {
+            padding: 10px;      
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 18px;
+            color: #fff;
+            background-color: darkred;
+            }
+            textarea {
+            width: calc(100% - 12px);
+            padding: 5px;
+            }
+            .testbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+            padding: 20px;
+            }
+            form {
+            width: 100%;
+            padding: 20px;
+            border-radius: 6px;
+            background: #fff;
+            box-shadow: 0 0 8px darkblue; 
+            }
+            .banner {
+            position: relative;
+            height: 250px;
+            background-image: url("/images/banner.jpg");  
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            }
+            .banner::after {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.4); 
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            }
+            input, select, textarea {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            }
+            input {
+            width: calc(100% - 10px);
+            padding: 5px;
+            }
+            textarea {
+            width: calc(100% - 12px);
+            padding: 5px;
+            }
+            .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+            color:  darkblue;
+            }
+            .item input:hover, .item select:hover, .item textarea:hover {
+            border: 1px solid transparent;
+            box-shadow: 0 0 3px 0  darkblue;
+            color: #006622;
+            }
+            .item {
+            position: relative;
+            margin: 10px 0;
+            }
+            .item span {
+            color: red;
+            }
+            .week {
+            display:flex;
+            justify-content:space-between;
+            }
+            .colums {
+            display:flex;
+            justify-content:space-between;
+            flex-direction:row;
+            flex-wrap:wrap;
+            }
+            .colums div {
+            width:48%;
+            }
+            .question span {
+            margin-left: 30px;
+            }
+            .question-answer label {
+            display: block;
+            }
+            .flax {
+            display:flex;
+            justify-content:space-around;
+            }
+            .btn-block {
+            margin-top: 10px;
+            text-align: center;
+            }
+            button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px; 
+            background:  darkblue;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+            }
+            button:hover {
+            background:  darkblue;
+            }
+            @media (min-width: 568px) {
+            .name-item, .city-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            }
+            .name-item input, .name-item div {
+            width: calc(50% - 20px);
+            }
+            .name-item div input {
+            width:97%;}
+            .name-item div label {
+            display:block;
+            padding-bottom:5px;
+            }
+            }
+        </style>
+
+    </head>
+
+    <body ng-controller="WelcomeController">
+        <div class="testbox">
+            <form ng-submit="addItem()">
+                <div class="banner">
+                    <h1>{{welcomeMessage}} Item Form</h1>                   
+                </div>
+                <br/>
+                <fieldset>
+                <legend>New Item Entry</legend>
+                <div class="colums">
+                    <div class="item">
+                        <label for="parentOrin">Parent Orin/NewStyleX<span>*</span></label>
+                        <input ng-model="parentOrin" type="text" name="parentOrin" />
+                    </div>
+                    <div class="item">
+                        <label for="gtin"> GTIN<span>*</span></label>
+                        <input ng-model="gtin" type="text" name="gtin" />
+                    </div>
+                    <div class="item">
+                        <label for="longDesc">Long Description<span>*</span></label>
+                        <input ng-model="longDesc" type="text"   name="longDesc" />
+                    </div>
+                    <div class="item">
+                        <label for="shortDesc">Short Description<span>*</span></label>
+                        <input ng-model="shortDesc" type="text"   name="shortDesc"/>
+                    </div>
+                    <div class="item">
+                        <label for="vpn">VPN<span>*</span></label>
+                        <input ng-model="vpn" type="text"   name="vpn" />
+                    </div>
+                    <div class="item">
+                        <label for="supplier">Supplier<span>*</span></label>
+                        <input ng-model="supplier" type="text"   name="supplier" />
+                    </div>
+                    <div class="item">
+                        <label for="brand">Brand<span>*</span></label>
+                        <input ng-model="brand" type="text"   name="brand" />
+                    </div>
+                    <div class="item">
+                        <label for="color">Color</label>
+                        <input ng-model="color" type="text"   name="color" />
+                    </div>
+                    <div class="item">
+                        <label for="size">Size</label>
+                        <input ng-model="size" type="text"   name="size" />
+                    </div>
+                    <div class="item">
+                        <label for="team">Team</label>
+                        <input ng-model="team" type="text"   name="team" />
+                    </div>
+                    <div class="item">
+                        <label for="retail">Retail Cost<span>*</span></label>
+                        <input ng-model="retail" type="number"   name="retail" />
+                    </div>
+                    <div class="item">
+                        <label for="unitCost">Unit Cost<span>*</span></label>
+                        <input ng-model="unitCost" type="number"   name="unitCost" />
+                    </div>
+
+                    <div class="btn-block">
+                        <button type="submit" value="add">Submit Item</button>
+                    </div>
+                </fieldset>
+                <br/>
+
+                <legend>Batch: </legend>
+                <div class="colums">
+                    <div class="card" ng-repeat="it in items">
+                        <p><strong>Parent Orin:</strong> {{it.parentOrin}}</p>
+                        <p><strong>Long Description:</strong> {{it.brand}} {{it.team}} {{it.color}} {{it.longDesc}} {{it.size}} </p>
+                        <p><strong>Short Description:</strong> {{it.brand}} {{it.team}} {{it.color}} {{it.shortDesc}} {{it.size}} </p>
+                        <p><strong>GTIN:</strong> {{it.gtin}}</p>
+                        <p><strong>VPN:</strong> {{it.vpn}}</p>
+                        <p><strong>Supplier:</strong> {{it.supplier}}</p>
+                        <p><strong>Retail Cost:</strong> {{it.retail}} </p>
+                        <p><strong>Unit Cost:</strong> {{it.unitCost}} </p>
+                        <button class="delete-btn" ng-click="deleteItem($index)">Delete</button>
+                    </div>
+                    <br>
+                </div>
+
+            </form >
+    </body>
+</html>
